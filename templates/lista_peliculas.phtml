@@ -1,0 +1,19 @@
+
+
+<ul class="list-group">
+    <?php foreach($pelis as $peli){?>
+        <li class="list-group-item item-peli">
+            <div>
+                <strong>Película: </strong><?php echo $peli->nombre ?> | <strong>Director: </strong><?php echo $peli->director ?> | <strong>Fecha de estreno: </strong><?php echo $peli->fecha_estreno ?>
+            </div>
+            <div class="actions">
+                <a href="mostrarPuntaje/<?php echo $peli->id_peliculas ?>" type="button" class='btn btn-info btn-sm ml-auto'>Ver puntajes</a>
+                <a href="editarPeli/<?php echo $peli->id_peliculas ?>" type="button" class='btn btn-success btn-sm ml-auto'>Editar</a>
+                <a href="eliminarPeli/<?php echo $peli->id_peliculas ?>" type="button" class='btn btn-danger btn-sm ml-auto'>Eliminar</a>
+            </div>
+                
+        </li>
+    <?php } ?>
+</ul>
+
+

@@ -1,0 +1,27 @@
+<form action="updatePeli" method="POST" class="my-4">
+<input type="hidden" name="id_peliculas" value="<?= $id ?>">
+    <div class="row">
+        <div class="col-9">
+            <div class="form-group">
+                <label>Nombre de la pelicula</label>
+                <input required name="nombre" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Director</label>
+                <input required name="director" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="form-group">
+                <label>Fecha de estreno</label>
+                <input required name="fecha_estreno" type="date" class="form-control">
+            </div>
+        </div>
+
+    <div class="col-6">
+    <button type="submit" class="btn btn-primary mt-2">Agregar pelicula</button>
+    </div>
+</form>

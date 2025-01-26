@@ -1,0 +1,16 @@
+<h1>Lista de todas las puntuaciones de peliculas</h1>
+<ul class="list-group">
+    <?php foreach($puntajes as $puntaje){ ?>
+        <li class="list-group-item item-peli">
+            <div>
+                <strong>Película: </strong><?php echo $puntaje->nombre_pelicula ?> | 
+                <strong>Empresa: </strong><?php echo $puntaje->empresa ?> | 
+                <strong>Puntaje: </strong><?php echo $puntaje->valoracion ?>
+            </div>
+            <div class="actions">
+                <a href="editarPuntaje/<?php echo $puntaje->id_puntuaciones ?>" type="button" class='btn btn-success btn-sm ml-auto'>Editar</a>
+                <a href="eliminarPuntaje/<?php echo $puntaje->id_puntuaciones ?>" type="button" class='btn btn-danger btn-sm ml-auto'>Eliminar</a>
+            </div>
+        </li>
+    <?php } ?>
+</ul>

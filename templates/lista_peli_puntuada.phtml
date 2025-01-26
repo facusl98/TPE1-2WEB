@@ -1,0 +1,12 @@
+<h1><?php echo $peliPuntuada->nombre ?></h1>
+<ul class="list-group">
+    <?php foreach($puntuaciones as $puntaje){?>
+        <li class="list-group-item item-peli">
+            <div>
+                <?php echo $puntaje->empresa ?> | puntaje: <?php echo $puntaje->valoracion ?>
+            </div>
+            
+        </li>
+        
+    <?php } ?>
+</ul>

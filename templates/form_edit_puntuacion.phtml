@@ -1,0 +1,21 @@
+<form action="updatePuntaje" method="POST" class="my-4">
+<input type="hidden" name="id_puntuaciones" value="<?= $id ?>">
+    <div class="row">
+        <div class="col-9">
+            <div class="form-group">
+                <label>Puntuación</label>
+                <input type="number" name="valoracion" min="1" max="10" required class="form-control">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Empresa</label>
+                <input required name="empresa" type="text" class="form-control">
+            </div>
+        </div>
+
+
+    <div class="col-6">
+    <button type="submit" class="btn btn-primary mt-2">Agregar puntuación</button>
+    </div>
+</form>
